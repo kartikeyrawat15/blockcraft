@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlockCraft</title>
+  <meta name="description" content="BlockCraft is a Minecraft-style voxel sandbox that runs in your browser. Explore procedurally generated terrain, mine resources and build with blocks." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BlockCraft" />
+  <meta property="og:description" content="A Minecraft-style voxel sandbox in your browser: explore procedurally generated terrain, mine resources and build with blocks." />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <div id="info">
+    <div id="info-player-position"></div>
+  </div>
+  <div id="toolbar-container">
+    <div id="toolbar">
+      <img class="toolbar-icon" id="toolbar-1" src="textures/grass.png"></img>
+      <img class="toolbar-icon" id="toolbar-2" src="textures/dirt.png"></img>
+      <img class="toolbar-icon" id="toolbar-3" src="textures/stone.png"></img>
+      <img class="toolbar-icon" id="toolbar-4" src="textures/coal_ore.png"></img>
+      <img class="toolbar-icon" id="toolbar-5" src="textures/iron_ore.png"></img>
+      <img class="toolbar-icon" id="toolbar-6" src="textures/tree_top.png"></img>
+      <img class="toolbar-icon" id="toolbar-7" src="textures/leaves.png"></img>
+      <img class="toolbar-icon" id="toolbar-8" src="textures/sand.png"></img>
+      <img class="toolbar-icon selected" id="toolbar-0" src="textures/pickaxe.png"></img>
+    </div>
+  </div>
+  <div id="overlay">
+    <div id="instructions">
+      <h1>BLOCKCRAFT</h1>
+      WASD - Move<br>
+      SPACE - Jump<br>
+      CLICK - Break / Place<br>
+      1-8 - Select Block<br>
+      <details id="all-controls">
+        <summary>? Controls</summary>
+        WASD - Move<br>
+        SHIFT - Sprint<br>
+        SPACE - Jump<br>
+        R - Reset Camera<br>
+        U - Toggle UI<br>
+        0 - Pickaxe<br>
+        1-8 - Select Block<br>
+        F1 - Save Game<br>
+        F2 - Load Game<br>
+        F10 - Debug Camera
+      </details>
+      <h2>PRESS ANY KEY TO START</h2>
+    </div>
+  </div>
+  <div id="status"></div>
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>
