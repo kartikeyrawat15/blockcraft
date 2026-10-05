@@ -4,7 +4,7 @@ A Minecraft-style voxel sandbox in your browser, with a living sky, weather and 
 
 **Live demo:** [blockcraft-rosy.vercel.app](https://blockcraft-rosy.vercel.app)
 
-![BlockCraft screenshot](public/preview.png)
+
 
 ## Features
 
